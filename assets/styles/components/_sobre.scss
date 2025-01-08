@@ -1,0 +1,75 @@
+@use "../abstract/mixins";
+
+.sobre{
+    background-color: #222;
+
+    .sobre__stack{
+        display: flex;
+    
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", serif;
+    
+        @include mixins.lista-alinhada(30px);
+    
+        
+        ul{
+            margin-top: 20px;
+            gap: 100px;
+        }
+    
+    
+        li{
+            color: #fff;
+            transition: 0.2s ease-in;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+            margin-right: 10px;
+            width: 65px;
+            border-radius: 12px;
+    
+            &:hover{
+                font-weight: lighter;
+                color: #0B5ED7;
+                cursor: pointer;
+            }
+    
+            img{
+                margin-right: 15px;
+                transition: 0.2s ease-in;
+            }
+    
+            &:hover img{
+                scale: 1.1;
+            }
+        }
+    
+        li:last-child{
+            margin-right: 100px;
+        }
+    
+    }
+
+    .sobre__mim{
+        text-align: center;
+        margin-top: 50px;
+        
+        div{    
+            position: relative;
+            border-radius: 5px;
+            padding: 20px;
+            color: #fff;
+            background-color: #333;
+            margin: 20px 50vh 20px 50vh;
+    
+            .bi-person-circle{
+                color: #fff;
+                position: absolute;
+                margin-top: -40px;
+            }
+        }
+    }
+}
+

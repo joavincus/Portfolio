@@ -1,0 +1,11 @@
+@mixin lista-alinhada($gap){
+    ul{
+        display: flex;
+        gap: $gap;
+        flex-wrap: wrap;
+
+        li{
+            flex-direction: row;
+        }
+    }
+}
