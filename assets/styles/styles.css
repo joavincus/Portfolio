@@ -1,226 +1,37 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
+.carousel-item{
+    height: 100vh;
+}
+img{
+    height: 100%;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+@media screen and (max-width:992px) {
+  
+    .bi-x-circle:hover{
+        border-radius: 100%;
+        color: #fff;
+        background-color: black;
+    }
 
-body {
-  height: 100vh;
-  line-height: 1;
-}
+    .tittle-header{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .lista{
+        display: flex;
+        gap: 12px;
+    }
 
-ol, ul {
-  list-style: none;
+    .item{
+        border: 1px solid #666;
+        width: 100%;
+            a{
+                padding-left: 15px;
+                &:hover{
+                    background-color: blue;
+                    color: white;
+                }
+            }
+    }
 }
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-mark {
-  color: #0B5ED7;
-  background-color: transparent;
-}
-
-body {
-  height: 100%;
-  font-family: "Montserrat", serif;
-  background: linear-gradient(180deg, #fff, #CCCCFF, #E1EBEE 100%);
-  background-repeat: no-repeat;
-}
-
-.cabecalho {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 50px;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-@media screen and (max-width: 720px) {
-  .cabecalho {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-.cabecalho h1 {
-  position: absolute;
-  font-weight: 450;
-  color: #222;
-}
-.cabecalho ul {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-.cabecalho ul li {
-  flex-direction: row;
-}
-.cabecalho ul {
-  transition: 200ms ease-in-out;
-  display: flex;
-  margin: auto;
-}
-@media screen and (max-width: 720px) {
-  .cabecalho ul {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-}
-.cabecalho li a {
-  opacity: 0.9;
-  transition: 0.3s ease-in-out;
-  font-size: 1.1em;
-  color: #222;
-}
-.cabecalho li:hover a {
-  font-weight: 500;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-  opacity: 1;
-  color: #0B5ED7;
-}
-.cabecalho .bi-linkedin, .cabecalho .bi-github {
-  color: #0B5ED7;
-}
-
-.apresentacao {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  margin-top: 80px;
-}
-.apresentacao .apresentacao__bg {
-  height: 300px;
-  width: auto;
-  border: 1px solid #333;
-  width: 50vh;
-  margin: auto;
-  margin-top: 30px;
-}
-.apresentacao .apresentacao__bg img {
-  width: 50px;
-  position: absolute;
-}
-@media screen and (max-width: 720px) {
-  .apresentacao .apresentacao__bg img img {
-    width: 50vw;
-  }
-}
-.apresentacao .apresentacao__bg #cuboface1 {
-  top: 250px;
-  left: 530px;
-}
-.apresentacao .apresentacao__bg #cuboface2 {
-  width: 60px;
-  top: 480px;
-  right: 460px;
-}
-.apresentacao h2 {
-  margin: auto;
-  width: 50vw;
-  font-size: 1.2rem;
-}
-
-.sobre {
-  background-color: #222;
-}
-.sobre .sobre__stack {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Poppins", serif;
-}
-.sobre .sobre__stack ul {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-.sobre .sobre__stack ul li {
-  flex-direction: row;
-}
-.sobre .sobre__stack ul {
-  margin-top: 20px;
-  gap: 100px;
-}
-.sobre .sobre__stack li {
-  color: #fff;
-  transition: 0.2s ease-in;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  text-align: center;
-  margin-right: 10px;
-  width: 65px;
-  border-radius: 12px;
-}
-.sobre .sobre__stack li:hover {
-  font-weight: lighter;
-  color: #0B5ED7;
-  cursor: pointer;
-}
-.sobre .sobre__stack li img {
-  margin-right: 15px;
-  transition: 0.2s ease-in;
-}
-.sobre .sobre__stack li:hover img {
-  scale: 1.1;
-}
-.sobre .sobre__stack li:last-child {
-  margin-right: 100px;
-}
-.sobre .sobre__mim {
-  text-align: center;
-  margin-top: 50px;
-}
-.sobre .sobre__mim div {
-  position: relative;
-  border-radius: 5px;
-  padding: 20px;
-  color: #fff;
-  background-color: #333;
-  margin: 20px 50vh 20px 50vh;
-}
-.sobre .sobre__mim div .bi-person-circle {
-  color: #fff;
-  position: absolute;
-  margin-top: -40px;
-}/*# sourceMappingURL=styles.css.map */
