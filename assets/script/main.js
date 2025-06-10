@@ -34,3 +34,16 @@ document.addEventListener("click", () => {
     box.style.color = "#0d47a1"
   });
 });
+
+// Máquina de escrever
+
+function typeWriter(elemento) {
+  const textoArray = elemento.innerHTML.split('');
+  elemento.innerHTML = ''
+  textoArray.forEach((letra, i) => {
+    setTimeout(() => elemento.innerHTML += letra, 75 * i)
+  })
+}
+
+  const textAboutMe = document.querySelector(".presentation-paragraph");
+  typeWriter(textAboutMe)

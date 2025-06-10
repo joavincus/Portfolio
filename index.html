@@ -14,6 +14,8 @@
     
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 
 </head>
 <body>
@@ -24,10 +26,10 @@
 
        <div>
                 <nav>
-                    <a href="#">Sobre mim</a>
-                    <a href="#">Trabalhos</a>
-                    <a href="#">Contatos</a>
-                    <button><a href="#">SOLICITAR</a></button>
+                    <!-- <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a> -->
+                    <button><a href="#">SOLICITAR SERVIÇO</a></button>
                 </nav>
             </div>
         
@@ -36,7 +38,8 @@
     <main>
         <div class="presentation">
             <div class="presentation-text">
-                <h2><mark>Desenvolvedor Web</mark> | <mark>IoT</mark> <br> <br> Apaixonado por tecnologia, atuo nas áreas de Desenvolvimento Web e Internet das Coisas (IoT), criando soluções que conectam o digital ao físico.</h2>
+                <h2><mark>Desenvolvedor Web</mark> | <mark>IoT</mark> <br> <br></h2>
+                    <h2 class="presentation-paragraph">Apaixonado por tecnologia, atuo nas áreas de Desenvolvimento Web e Internet das Coisas (IoT), criando soluções que conectam o digital ao físico.</h2>
             </div>
             <div class="circle"></div>
         </div>
@@ -44,29 +47,24 @@
         <div class="about">
 
             <div class="topics" id="box-design" onclick="selectBox()">
-                <i class="bi bi-brush"></i>
-                <h2 class="topic-name">DESIGN MODERNO</h2>
+               <i class="bi bi-mortarboard"></i>
+                <h2 class="topic-name">Sobre mim</h2>
             </div>
 
              <div class="topics" id="box-technology" onclick="selectBox()" >
                 <i class="bi bi-code-slash"></i>
-                <h2 class="topic-name">TECNOLOGIAS DE PONTA</h2>
+                <h2 class="topic-name">Tecnologias</h2>
             </div>
 
-             <div class="topics" id="box-accessibility" onclick="selectBox()">
-              <i class="bi bi-people"></i>
-                <h2 class="topic-name">ACESSIBILIDADE TOTAL</h2>
-            </div>
-
+            <div class="topics" id="box-accessibility" onclick="selectBox()">
+             <i class="bi bi-rocket-takeoff"></i>
+               <h2 class="topic-name">Trabalhos</h2>
+           </div>
+            
         </div>
 
         <section class="about-me">
-            <div class="box_about-me">
-                <p> Estudante do curso técnico de Informática pelo IFRN e Desenvolvedor Front-End, apaixonado por tecnologia e eletrônica. <br> <br> Tenho forte interesse nas áreas de Desenvolvimento Web e Internet das Coisas (IoT), unindo criatividade com soluções tecnológicas práticas.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vel temporibus at nisi fugit unde aperiam dolorum cumque pariatur eligendi error quis obcaecati, corrupti autem similique adipisci minima aliquid illum.</p>
-                <br> <br>
-            </div>
-              <ul>
+             <ul class="icons">
                 <li class="tooltip">
                     <i class="devicon-html5-plain colored"></i>
                 </li>
@@ -141,6 +139,12 @@
                   <i class="devicon-git-plain colored"></i>
                 </li>
             </ul>
+            <div class="box_about-me">
+                <p> Estudante do curso técnico de Informática pelo IFRN e Desenvolvedor Front-End, apaixonado por tecnologia e eletrônica. <br> <br> Tenho forte interesse nas áreas de Desenvolvimento Web e Internet das Coisas (IoT), unindo criatividade com soluções tecnológicas práticas.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vel temporibus at nisi fugit unde aperiam dolorum cumque pariatur eligendi error quis obcaecati, corrupti autem similique adipisci minima aliquid illum.</p>
+                <br> <br>
+            </div>
+             
         </section>
     </main>
 

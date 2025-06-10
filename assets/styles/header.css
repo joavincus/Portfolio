@@ -6,6 +6,7 @@
     box-sizing: border-box;
     padding: 5px;
     height: 100px;
+    margin-bottom: -50px;
     
 }
 
@@ -15,7 +16,7 @@
     .logo-tittle{
         margin-left: 50px;
         mark{
-            color: #296BBD;
+            color: #0D47B2;
         }
     }
 }
@@ -39,14 +40,16 @@ nav{
     margin-right: 30px;
 
     button{
+        box-shadow: 3px 1px 1px #255DAE;
         background-color: #3391E5;
         border-radius: 100px;
         padding: 12px;
-        margin-top: -5px;
+        margin-top: -8px;
         border: 0px;
         transition: 0.6s ease;
 
         &:hover{
+            cursor: pointer;
             background-color: #255DAE;
         }
 
@@ -63,15 +66,26 @@ nav{
     a{
         transition: 0.8ms;
         text-decoration: none;
-        padding: 10px;
-        color: black;
+        
         border: 1px solid #fff;
         border-radius: 150px;
-        
-        &:hover{
-        scale: 1.09;
-        color: #255DAE;
-        }
+    
     }
 }
 
+.bi{
+    font-size: 1.4em;
+}
+
+.bi-linkedin{
+    color: #0D47A1;
+}
+.bi-github{
+    color: #0D47B2;
+}
+
+.bi-instagram{
+    border: none;
+    color: white;
+    color: #0D47A1;
+}
