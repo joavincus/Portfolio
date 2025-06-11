@@ -219,6 +219,8 @@ html {
       }
     }
 
+   
+
     .about-me_box{
          @media screen and (max-width:390px){
         margin: 40px 0%;
@@ -265,14 +267,15 @@ html {
       display: flex;
       flex-direction: column;
       padding: 10px;  
-      margin-top: 50px;
+      margin-top: 80px;
       width: 30vw;
       border-right: 1px solid var(--blue);
     
        @media screen and (max-width: 730px) {
         text-align: center;
         width: 100vh;
-          border-right: none;
+        border-right: none;
+ 
       }
     }
 
@@ -320,7 +323,7 @@ html {
 
 .about-me_link{
   font-family: "Inter", sans-serif;
-  margin-left: 50px;
+  margin-left: 8px;
 }
 
 .tooltip-inner{
@@ -404,6 +407,9 @@ html {
       max-width: 100vw;
   }
 
+   #tech-topic-one{
+    margin-top: 380px;
+  }
 
   }
 
@@ -468,9 +474,6 @@ html {
     background-color: rgba(0, 0, 0, 0.8) !important;
   }
 
-
-
-
   </style>
 </head>
 
@@ -521,9 +524,11 @@ html {
         <h2 class="presentation-text-tittle">Olá, meu nome é<mark>João Vinícius</mark>sou técnico em Informática e Desenvolvedor Web </h2>
         <h2 class="presentation-paragraph">Apaixonado por tecnologia, atuo nas áreas de Desenvolvimento Web e Internet das Coisas (IoT), criando soluções que conectam o digital ao físico.</h2>
         <div class="circle" id="circle-mb"></div>
+        <div class="tags-botoes">
         <a href="#tech" class="btn botoes">Tecnologias</a>
         <a href="#about-me" class="btn botoes">Sobre mim</a>
         <a href="#works" class="btn botoes">Trabalhos</a>
+        </div>
       </div>
       <div class="circle"></div>
     </section>
@@ -531,7 +536,7 @@ html {
 
 <section class="tech" id="tech">
 
-  <div class="tech-box">
+  <div class="tech-box" id="tech-topic-one">
     <h3 class="tech-topic"><mark><i class="bi bi-code-slash"></mark></i>Linguagens</h3>
     <p class="tech-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi illum suscipit iure vitae doloremque illo nisi, accusantium quidem, accusamus quaerat at doloribus aspernatur ducimus cumque omnis voluptatum eius labore! Perferendis.</p>
       <div class="icons">
