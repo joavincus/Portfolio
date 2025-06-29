@@ -1,0 +1,31 @@
+@use '../base/variables';
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: 37.5rem) { @content; }
+  } @else if $breakpoint == medium {
+    @media (max-width: 56.25rem) { @content; }
+  } @else if $breakpoint == large {
+    @media (max-width: 75rem) { @content; }
+  } @else if $breakpoint == custom-64 {
+    @media (max-width: 64rem) { @content; }
+  }
+}
+
+@mixin flexbox($justify: center, $align: center, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin transition($properties...) {
+  transition: $properties variables.$transition-duration ease-in-out;
+}
+
+@mixin bg-img($bg-url, $bg-repeat: no-repeat, $bg-size: contain, $bg-position: center) {
+  background-image: url($bg-url);
+  background-repeat: $bg-repeat;
+  background-size: $bg-size;
+  background-position: $bg-position;
+}

@@ -1,0 +1,142 @@
+@use '../base/variables';
+@use '../utils/mixins';
+
+.main {
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    color: variables.$primary-color;
+
+    .main-container {
+        @include mixins.flexbox();
+
+        .card-code {
+            display: flex;
+            flex-direction: column;
+            padding: 80px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(5, 67, 255, 0.3);
+            background-color: variables.$primary-color;
+        }
+
+        .card-code-content {
+            margin-top: -60px;
+            margin-left: -60px;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        span {
+            code {
+                font-size: 19px;
+                color: #ccc;
+            }
+        }
+
+        mark {background-color: transparent;}
+        #mark-1 {color: #4169E1;}
+        #mark-2 {color: #F9D156;}
+        #mark-3 {color: #D5806C;}
+    }
+
+    .main-img {
+        width: 300px;
+        height: 300px;
+        @include mixins.bg-img($bg-url:'./assets/banner-1.png');
+    }
+}
+
+.section-table-points {
+    padding:0px 100px;
+
+    .table-points {
+        @include mixins.flexbox($justify: space-around);
+        text-align: center;
+        padding: 30px;
+        background-color: variables.$primary-color;
+        color: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(65, 105, 225, 0.3);
+
+        .points {
+            h1 {
+                font-size: variables.$font-size-base;
+                color: variables.$accent-color;
+            }   
+
+            p {
+                font-size: variables.$font-size-regular;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.about-me-title {
+    margin: 100px;
+    text-align: center;
+    color: variables.$primary-color;
+    text-transform: uppercase;
+    font-size: variables.$font-size-base;
+
+    &::before{
+        content: '</ ';
+        color: variables.$accent-color;
+    }
+       &::after{
+        content: ' >';
+        color: variables.$accent-color;
+    }
+}
+
+.about-me {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        
+        .about-me-containers {
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: center;
+
+            @media screen and (max-width: 750px) {
+                flex-direction: column;
+            }
+
+            .about-me-containers-img {
+                width: 60vw;
+                margin-left: 100px;
+                background-image: url('');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .about-me-containers-text {
+                font-size: variables.$font-size-regular;
+                width: 100vw;
+                padding-left: 30px;
+                padding-right: 100px;
+
+                p {margin-bottom: 20px;}
+
+                .contact-icons {
+                    display: flex;
+                    margin-top: 20px;
+                    gap: 30px;
+                    a {
+                        i {
+                            color: variables.$accent-color !important;
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+}

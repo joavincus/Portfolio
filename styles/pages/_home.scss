@@ -1,0 +1,47 @@
+@use '../base/variables';
+@use '../utils/mixins';
+
+%base-h2 {
+  color: variables.$heading-color;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+%base-p {
+  margin-bottom: variables.$margin-bottom-regular;
+  line-height: 1.6;
+}
+
+.services {
+  padding: 6rem 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: variables.$subheading-color;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+
+    h5{
+      color: variables.$accent-color;
+    }
+
+    @include mixins.respond-to(medium) {
+      flex-direction: column;
+    }
+
+    @include mixins.respond-to(small) {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@use 'variables';
+@use "../utils/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: variables.$font-family-primary;
+  background-color: variables.$secondary-color;
+  color: variables.$primary-color;
+  line-height: 1.6;
+  font-family: variables.$font-family-primary;
+
+  a {
+    color: variables.$primary-color;
+    text-decoration: none;
+    @include mixins.transition(color);
+    &:hover {
+      color: variables.$accent-color;
+    }
+  }
+
+  mark{
+    background-color: transparent;
+    color: #4169E1;
+  }
+}
+
+input::placeholder {
+  color: #999999; /* Cor desejada */
+  opacity: 1; /* Para garantir que a cor fique opaca */
+}
+
+/* Para navegadores Webkit (Chrome, Safari, Edge) */
+input::-webkit-input-placeholder {
+  color: #999999;
+}
+
+/* Para Firefox */
+input::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+
+/* Para Internet Explorer 10-11 */
+input:-ms-input-placeholder {
+  color: #999999;
+}
+
+/* Para Microsoft Edge */
+input::-ms-input-placeholder {
+  color: #999999;
+}

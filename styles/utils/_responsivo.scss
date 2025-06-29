@@ -1,0 +1,81 @@
+@use '../base/variables';
+@use '../utils/mixins';
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        margin: auto !important;
+        text-align: center;
+    }
+
+     .main-container  {
+        flex-direction: column !important;
+        margin: auto;
+        text-align: left !important;
+
+        .card-code-content {
+            margin-top: 1px !important;
+            position: absolute;
+            left: 100px;
+            margin-top: -30px !important;
+        }
+
+        h2 {margin-top: 50px;}
+        
+        .card-code {
+            margin-top: -50px !important;
+            padding: 45px !important;
+            flex-wrap: wrap;
+            width: 90vw;
+        
+
+           .card-code-text {
+            margin-top: 30px;
+            border: 1px solid red;
+           }
+        }
+     }
+
+
+    .table-points {
+        padding: 0px;
+        margin: 0px;
+        margin-left: 0px;
+        margin-top: -50px !important;
+
+        @media screen and (max-width: 480px) {
+            margin-left: -20px !important;
+        }
+
+        .points {
+            padding: 10px;
+        }
+    }
+
+    .about-me-title {
+        font-size: variables.$font-size-base-mobile;
+        margin-left: 80px !important;
+    }
+    .about-me-containers-text {
+        margin-top: -60px;
+        padding: 30px !important;
+        text-align: center;
+
+        .contact-icons {
+            margin-top: 50px !important;
+            justify-content: center !important;
+        }
+    }
+
+    .skill-card {
+        height: auto;
+        gap: 20px;
+
+        .icons ul {
+        gap: 15px;
+        justify-content: center;
+        margin-top: 50px;
+        }
+    }
+}
+

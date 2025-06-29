@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <title>J.VINÍCIUS - Portfólio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+
+
+<style>
+ .link {
+  position: relative;
+  transition: 0.4s ease-in-out;
+  opacity: 1; /* Certifique-se que o link está visível */
+}
+
+.link::before,
+.link::after {
+  opacity: 0;
+  transition: 0.4s opacity ease;
+  color: #4169E1;
+}
+
+/* Mostrar as setas no hover */
+.link:hover::before,
+.link:hover::after {
+  opacity: 1;
+}
+
+/* Conteúdo antes e depois */
+.link::before {
+  content: '</ ';
+}
+
+.link::after {
+  content: ' >';
+}
+
+.card-code{
+  width: 60%;
+}
+
+.table-points{
+  text-align: center;
+}
+
+#title{
+  transition: 0.5s opacity ease-in-out;
+  opacity: 1;
+  color: #222 ;
+}
+
+#title::before {
+  content: '</ ';
+  color: #4169E1;
+}
+
+#title::after {
+  content: ' >';
+  color: #4169E1;
+}
+
+
+@media screen and (max-width: 1026px){
+  .principal-container{
+    margin-bottom: 0px; margin-top: 0px;
+    flex-direction: column !important;
+  }
+  .card-code{
+    margin-top: 60px !important;
+    width: 90%;
+  }
+
+  .table-points{
+    font-size: 10px;
+}
+
+@media screen and (max-width: 560px) {
+    .table-points{
+    flex-wrap: wrap;
+    width: 60vw;
+  }}
+}
+
+</style>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+          <h1 class="navbar-brand" id="title">J.VINÍCIUS</h1>
+        <button class="navbar-toggler" aria-label="Menu" id="menu-toggle">
+          <span class="hamburger-icon"></span>
+        </button>
+        <div class="navbar-menu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link link" href="#about-me">Sobre mim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active link" aria-current="page" href="#servicos">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active link" aria-current="page" href="#servicos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#contato">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="dark-mode-switch">
+                  <input type="checkbox" id="darkModeToggle">
+                  <label for="darkModeToggle" class="toggle-switch">
+                    <span class="slider"></span>
+                    <span class="toggle-text">Modo noturno</span>
+                  </label>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <aside class="sidebar">
+      <button class="sidebar-close" aria-label="Close sidebar">&times;</button>
+      <a class="sidebar-brand" href="#">
+        <h1>PORTFÓLIO </h1>
+      </a>
+      <ul class="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#servicos">SOBRE MIM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#produtos">HABILIDADES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">PROJETOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">SERVIÇOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <div class="dark-mode-switch">
+              <input type="checkbox" id="darkModeToggleSidebar">
+              <label for="darkModeToggleSidebar" class="toggle-switch">
+                <span class="slider"></span>
+                <span class="toggle-text">Modo noturno</span>
+              </label>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+    </aside>
+  </header>
+
+  <main>
+    
+    <section class="main">
+      <div class="main-container">
+        <div class="card-code">
+          <div class="card-code-content">🔴🟢🟡</div>
+          <h2>Desenvolvedor Web </h2>
+          <span><code><mark id="mark-1">Console</mark>.<mark id="mark-2">log</mark>(<mark id="mark-3">"Hello World"</mark>)<code><span>
+          <div class="card-code-text">
+          <p class="card-code-p">Técnico em Informática, cursando Eletrônica na modalidade EAD e futuro Engenheiro da Computação. Unindo Hardware e Software desenvolvo aplicações completas. </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="main-img"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="r-table section-table-points">
+      <div class="table-points">
+        <div class="points">
+          <h1>+1</h1>
+          <p>VISITANTES</p>
+        </div>
+        <div class="points">
+          <h1>+100</h1>
+          <p>PROJETOS</p>
+        </div>
+        <div class="points">
+          <h1>3 ANOS</h1>
+          <p>TEMPO DE PROFISSÃO</p>
+        </div>
+      </div>
+    </section>
+
+      <h1 class="about-me-title" id="about-me">Sobre mim</h1>
+     <section class="about-me">
+      <div class="about-me-containers">
+        <div class="about-me-containers-img" id="about-me-img"></div>
+        <div class="about-me-containers-text" id="about-me-text">
+          <p>Me chamo, João Vinícius Fernandes e sou Desenvolvedor Web. Iniciei minha formação no Técnico em Informática pelo Instituto Federal de Ciência e Tecnologia do Rio Grande do Norte (IFRN). Atualmente, curso Eletrônica na modalidade EAD e me preparo para cursar Engenharia da Computação.</p>
+          <p>Acredito no poder da inovação para transformar negócios. Trabalho como Freelancer, ajudando pequenas e médias empresas a automatizar processos, ampliar sua presença online e aumentar suas vendas por meio de sites profissionais e automações digitais No meu tempo livre, adoro conversar sobre novas tendências do mercado e frequentar cafeterias locais.</p>
+          <p>Fique à vontade para se conectar comigo – será um prazer trocar ideias e explorar novas possibilidades de colaboração!</p>
+          <div class="contact-icons">
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <h2 class="about-me-title">HABILIDADES</h2>
+    <section class="skill-cards">
+  <div class="skill-card card-1">
+    <div>
+      <h3 class="skill-card-title">LINGUAGENS DE PROGRAMAÇÃO</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reiciendis nam architecto quae voluptatibus minus eveniet blanditiis iste dolore nostrum numquam quisquam enim distinctio debitis eaque quod, aspernatur quam molestiae!</p>
+    </div>
+    <div class="icons">
+      <ul>
+        <li><img id="icon-img-1" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="JavaScript"></li>
+        <li><img id="icon-img-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="TypeScript"></li>
+        <li><img id="icon-img-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="C++"></li>
+        <li><img id="icon-img-4" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="C#"></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="skill-card card-2">
+    <div>
+      <h3>Linguagens de Programação</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, obcaecati vero doloribus saepe laboriosam esse, error voluptas beatae culpa commodi quibusdam enim distinctio nemo magni dolorem, molestias velit perferendis tempore.</p>
+    </div>
+      <div class="icons">
+      <ul>
+        <li><img id="icon-img-5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="JavaScript"></li>
+        <li><img id="icon-img-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="TypeScript"></li>
+        <li><img id="icon-img-7" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="C++"></li>
+        <li><img id="icon-img-8" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="C#"></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="skill-card card-3">
+    <div>
+      <h3>Linguagens de Programação</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat possimus recusandae blanditiis eos officia adipisci a modi vitae similique? Architecto cumque omnis nulla cupiditate dolor nostrum rerum sequi vel eum?</p>
+    </div>
+      <div class="icons">
+      <ul>
+        <li><img id="icon-img-9" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="JavaScript"></li>
+        <li><img id="icon-img-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="TypeScript"></li>
+        <li><img id="icon-img-11" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="C++"></li>
+        <li><img id="icon-img-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="C#"></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+   <section class="project-search-section">
+  <div class="project-search-container">
+    <h2 class="projects-title">PROJETOS</h2>
+    <label for="project-search" class="sr-only"></label>
+    <input
+      id="project-search"
+      class="search-input"
+      type="text"
+      placeholder="Busque pela categoria, linguagem, framework...">
+  </div>
+</section>
+
+
+
+    <!-- <section class="services" id="servicos">
+      <h2>Serviços Freelancer</h2>
+      <div class="services-container">
+        <article class="card">
+          <img src="./assets/cafe-e-bistro.png" alt="Balcão de padaria tradicional com alimentos diversos">
+          <div class="card-body">
+            <h5>Sites</h5>
+            <p>Nosso bistrô oferece uma ampla variedade de cafés, smoothies, deliciosos salgados e sobremesas. Uma
+              excelente opção para quem busca um lugar tranquilo e aconchegante.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="./assets/buffet.png" alt="Mesa de buffet com alimentos diversos">
+          <div class="card-body">
+            <h5>Automações</h5>
+            <p>Buffet e catering personalizado para eventos, produções e celebrações. Com um menu variado e adaptável às
+              preferências do cliente, atendimento atencioso e profissional.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="./assets/delivery.png" alt="Caixa aberta armazenando comidas diversas">
+          <div class="card-body">
+            <h5>Manutenções</h5>
+            <p>Para quem deseja desfrutar no conforto de casa, oferecemos delivery dos produtos. Com o mesmo cardápio
+              variado de sempre, sem perder nosso sabor e padrão de qualidade. asdass</p>
+          </div>
+        </article>
+      </div>
+    </section>   
+
+      <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
+        <div class="footer-image-container">
+          <img src="./assets/whats.png" alt="Ícone do whatsapp">
+          <img src="./assets/insta.png" alt="Ícone do instagram">
+          <img src="./assets/twitter.png" alt="Ícone do twitter">
+        </div>
+      </div>
+    </footer> -->
+
+
+  <script type="module" src="./src/main.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+</body>
+
+</html>
