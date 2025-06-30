@@ -2,21 +2,17 @@
 @use '../utils/mixins';
 @use "../utils/functions";
 
-header{
-  position: sticky;
-  top: 0;
-  z-index: 4;
-  background-color: variables.$secondary-color;
-}
-
 .navbar {
   background-color: variables.$secondary-color;
   padding: variables.$padding-regular;
   position: relative;
-  
 
   .container {
     @include mixins.flexbox($justify: space-around);
+  }
+
+  .navbar-brand img {
+    max-width: 9.375rem; 
   }
 
   .navbar-menu {
@@ -27,7 +23,7 @@ header{
       gap: 1.5rem;
 
       .nav-item {
-        font-size: 1.2rem; 
+        font-size: 1.25rem; 
         list-style: none;
       }
 
@@ -36,7 +32,7 @@ header{
         font-weight: 400;
 
         &:hover {
-          scale: 1.1;
+          color: variables.$accent-color;
         }
       }
     }
@@ -48,12 +44,14 @@ header{
     border: none;
     cursor: pointer;
     outline: none;
-    padding: 0rem;
+    padding: 0.5rem;
+    top: 1rem;
+    right: 1.5rem;
 
     .hamburger-icon {
       display: block;
       padding-right: 2rem;
-      width: 1rem;
+      width: 2rem;
       height: 0.25rem;
       background-color: variables.$nav-link-color;
       position: relative;
@@ -131,9 +129,7 @@ header{
   position: fixed;
   top: 0;
   right: 0;
-  width: 20rem;
-  border-left: 4px solid variables.$accent-color;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,0.2) !important;
+  width: 15.625rem; 
   height: 100%;
   background-color: variables.$secondary-color;
   transform: translateX(100%);
@@ -142,6 +138,11 @@ header{
   box-shadow: functions.custom-box-shadow(0.625rem, rgba(0, 0, 0, 0.2));
   z-index: 1000;
 
+  h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   &.open {
     transform: translateX(0);
   }
@@ -149,31 +150,22 @@ header{
   .sidebar-close {
     background: none;
     border: none;
-    font-size: 3.2rem;
+    font-size: 2rem;
     cursor: pointer;
     color: variables.$nav-link-color;
     position: absolute;
-    top: 0rem;
+    top: 1rem;
     right: 1rem;
-
-    &:hover {
-      color: variables.$accent-color;
-    }
   }
 
-  .sidebar-brand {
+  .sidebar-brand img {
     max-width: 12.5rem; 
-
-    h1 {
-      margin-top: 2.5rem;
-      margin-bottom: 3rem;
-    }
+    margin-bottom: 2rem;
   }
 
   .sidebar-nav {
     @include mixins.flexbox($align: start, $direction: column);
     gap: 3rem;
-        margin-left: -10px !important;
 
     .nav-item {
       list-style: none;
@@ -181,15 +173,9 @@ header{
       .nav-link {
         color: variables.$nav-link-color;
         font-weight: 400;
-        padding: 10px;
-        border-radius: 8px;
-        font-size: variables.$font-size-base-mobile;
-        
 
         &:hover {
-
-          background-color: variables.$accent-color;
-          color: variables.$secondary-color !important;
+          color: variables.$accent-color !important;
         }
       }
     }
@@ -221,7 +207,7 @@ body.sidebar-open .navbar-brand img {
     .slider {
       position: absolute;
       margin: 0.125rem; 
-      width: 1.125srem; 
+      width: 1.125rem; 
       height: 1.125rem; 
       background-color: variables.$dark-accent-color;
       border-radius: 50%;
