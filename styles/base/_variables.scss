@@ -1,8 +1,10 @@
-$primary-color: #333;
+$primary-color: #111;
 $secondary-color: #fff;
-$accent-color: #4169E1;
+$accent-color: #2962FF;
 
 $font-family-primary:"Glegoo", monospace;
+$font-family-secondary: "Oswald", sans-serif;
+
 $font-size-base: 2.2rem;
 $font-size-regular: 1.2rem;
 
@@ -14,7 +16,7 @@ $border-radius: 0.5rem;
 $transition-duration: 0.3s;
 $scale-factor: 1.1;
 $modal-bg: #fff;
-$modal-shadow: rgba(65, 105, 225);
+$modal-shadow: #B551E5;
 $modal-max-width: 37.5rem;
 $modal-padding: 1em;
 $modal-border-color: #DEE2E6; 
@@ -25,6 +27,6 @@ $nav-link-color: #7B7574;
 $form-border-color: #CED4DA; 
 $dark-primary-color: #212529; 
 $dark-secondary-color: #fff;
-$dark-accent-color: #4169E1; 
-$dark-modal-bg: #212529;
+$dark-accent-color: #2962FF; 
+$dark-modal-bg: #2962FF;
 $dark-modal-border-color: #DEE2E6;

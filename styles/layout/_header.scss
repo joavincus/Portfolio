@@ -6,6 +6,52 @@
   background-color: variables.$secondary-color;
   padding: variables.$padding-regular;
   position: relative;
+  text-transform: uppercase;
+
+    #title{
+    transition: 0.5s opacity ease-in-out;
+    opacity: 1;
+    color: #111 ;
+  }
+
+  #title::before {
+    content: '</ ';
+    color: variables.$accent-color;
+  }
+
+  #title::after {
+    content: ' >';
+    color: variables.$accent-color;
+  }
+
+  .link {
+  position: relative;
+  transition: 0.4s ease-in-out;
+  opacity: 1; /* Certifique-se que o link está visível */
+}
+
+.link::before,
+.link::after {
+  opacity: 0;
+  transition: 0.4s opacity ease;
+  color: variables.$accent-color;
+}
+
+/* Mostrar as setas no hover */
+.link:hover::before,
+.link:hover::after {
+  opacity: 1;
+}
+
+/* Conteúdo antes e depois */
+.link::before {
+  content: '</ ';
+}
+
+.link::after {
+  content: ' >';
+}
+
 
   .container {
     @include mixins.flexbox($justify: space-around);
@@ -139,6 +185,7 @@
   z-index: 1000;
 
   h1 {
+    
     margin-top: 2rem;
     margin-bottom: 2rem;
   }

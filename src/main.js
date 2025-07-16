@@ -55,12 +55,6 @@ ScrollReveal().reveal('.points', {
   interval: 200
 });
 
-ScrollReveal().reveal('#about-me-img', {
-      duration: 1500,
-      origin: 'left',
-      distance: '500px',
-      interval: 200
-});
 
 ScrollReveal().reveal('#about-me-text', {
   duration: 1000,     

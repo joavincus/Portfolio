@@ -13,6 +13,12 @@ html {
   scroll-behavior: smooth;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 body {
   font-family: variables.$font-family-primary;
   background-color: variables.$secondary-color;
