@@ -4,8 +4,10 @@
 .main {
     display: flex;
     margin-bottom: 100px;
-    margin-top: 100px;
+
     color: variables.$primary-color;
+    min-height: 80vh;
+
 
     .main-container {
         @include mixins.flexbox();
@@ -17,15 +19,19 @@
             font-size: 1.3rem;
 
             .card-code-text {
-                width: 60%;
+                width: 100%;
             }
         }
 
 
         h2 {
             text-transform: uppercase;
-            color: variables.$accent-color;
             margin-bottom: 20px;
+            font-size: variables.$font-size-base;
+        }
+
+        .card-code-p {
+            font-size: 1.5rem;
         }
     }
 
@@ -34,18 +40,6 @@
         height: 300px;
         @include mixins.bg-img($bg-url:"https://static.vecteezy.com/system/resources/thumbnails/032/325/349/small_2x/macaw-parrot-isolated-on-transparent-background-file-cut-out-ai-generated-png.png");
     }
-
-                    .contact-icons {
-                    display: flex;
-                    margin-top: 20px;
-                    gap: 30px;
-                    a {
-                        i {
-                            color: variables.$accent-color !important;
-                            font-size: 1.5rem;
-                        }
-                    }
-                }
 }
 
 .section-table-points {
@@ -69,6 +63,7 @@
             p {
                 color: #111;
                 font-weight: 600;
+                font-size: variables.$font-size-regular;
             }
         }
     }
@@ -78,33 +73,42 @@
 .about-me {
         display: flex;
         flex-direction: column;
-        gap: 100px;
         margin-top: 100px;
+        align-items: center;
         
         .about-me-containers {
+            margin: 100px 0px;
             width: 100vw;
             display: flex;
             flex-direction: row;
             justify-content: center;
-            justify-content: center;
+            align-items: center;
 
             @media screen and (max-width: 750px) {
                 flex-direction: column;
             }
 
             .about-me-containers-img {
-                width: 60vw;
+                width: 450px;
+                height: 450px;
                 margin-left: 100px;
-                background-image: url('https://www.pngarts.com/files/8/Anime-PNG-Download-Image.png');
+  
                 background-position: center;
                 background-repeat: no-repeat;
-                background-size: contain;
+    
+                background-size: 250px;
+                background-position-y: 110px;
+                border-radius: 100%;
+                background-color: variables.$accent-color;
+    
+       
+               
             }
 
             .about-me-containers-text {
                 font-size: variables.$font-size-regular;
-                width: 100vw;
-                padding-left: 30px;
+                margin-left: 100px;
+                width: 50vw;
                 padding-right: 100px;
                 color: #111 !important;
 
@@ -118,7 +122,7 @@
 .project-search-container {
     .projects-items {
         display: flex;
-        background-color: #fff;
+        background-color: transparent;
         padding: 5px;
         border-radius: 100px;
         gap: 30px;
@@ -189,3 +193,15 @@
         padding-bottom: 18px;
         margin: auto !important;
     }
+
+                        .contact-icons {
+                    display: flex;
+                    margin-top: 20px;
+                    gap: 30px;
+                    a {
+                        i {
+                            color: variables.$accent-color !important;
+                            font-size: 1.5rem;
+                        }
+                    }
+                }

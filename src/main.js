@@ -64,6 +64,7 @@ ScrollReveal().reveal('#about-me-text', {
   reset: false, 
   interval: 200   
 });
+
 ScrollReveal().reveal('.contact-icons', {
   duration: 1000,   
   origin: 'bottom',   
@@ -121,3 +122,5 @@ criarTooltipPersonalizada('#icon-img-1', 'JavaScript', 'meu-tema', 'top');
 criarTooltipPersonalizada('#icon-img-2', 'TypeScript', 'meu-tema', 'top');
 criarTooltipPersonalizada('#icon-img-3', 'C-Plus', 'meu-tema', 'top');
 criarTooltipPersonalizada('#icon-img-4', 'C-Sharp', 'meu-tema', 'top');
+
+

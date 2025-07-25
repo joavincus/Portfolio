@@ -3,6 +3,7 @@
 
 .card {
     transition: 0.3s ease-in;
+    max-width: 25vw;
 
     span {
         color: variables.$accent-color ;
@@ -25,6 +26,14 @@
             color: variables.$accent-color;
         }
 
+        &:hover {
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
     // span::before {
     //     content: "|";
     //     color: variables.$accent-color;
@@ -33,12 +42,47 @@
 
 
 .card:hover {
-    scale: 1.04;
+    scale: 1.02;
+}
+
+.card:hover span {
+    background-color: variables.$accent-color;
+    color: white;
+}
+
+.card:hover .options {
+    background-color: variables.$accent-color !important;
+    color: white !important;
+}
+
+.options {
+    border-left: 4px solid variables.$accent-color;
+    border-radius: 3px;
+    transition: opacity 0.2s ease-in-out;
+
+    background-color: transparent; 
+    color: #005fa3; 
+    padding: 15px;
+    margin-top: 10px; 
+    background-color: #fff !important;
+}
+
+
+.card:hover .card-options {
+    opacity: 1 !important;
+    background-color: variables.$accent-color;
 }
 
 .card:hover .languagens {
     opacity: 1 !important;
 }
+
+.options {
+    background-color: variables.$accent-color;
+    color: variables.$accent-color !important;
+    font-weight: 800;
+}
+
 
 .languagens {
     button {

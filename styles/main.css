@@ -30,11 +30,12 @@ body a {
   transition: color 0.3s ease-in-out;
 }
 body a:hover {
-  color: #2962FF;
+  color: #4169E1;
 }
 body mark {
   background-color: transparent;
   color: #4169E1;
+  font-weight: 100;
 }
 
 input::-moz-placeholder {
@@ -83,11 +84,11 @@ input::-ms-input-placeholder {
 }
 .navbar #title::before {
   content: "</ ";
-  color: #2962FF;
+  color: #4169E1;
 }
 .navbar #title::after {
   content: " >";
-  color: #2962FF;
+  color: #4169E1;
 }
 .navbar .link {
   position: relative;
@@ -98,7 +99,7 @@ input::-ms-input-placeholder {
 .navbar .link::after {
   opacity: 0;
   transition: 0.4s opacity ease;
-  color: #2962FF;
+  color: #4169E1;
 }
 .navbar .link:hover::before,
 .navbar .link:hover::after {
@@ -141,7 +142,7 @@ input::-ms-input-placeholder {
   font-weight: 400;
 }
 .navbar .navbar-menu .navbar-nav .nav-link:hover {
-  color: #2962FF;
+  color: #4169E1;
 }
 .navbar .navbar-toggler {
   display: none;
@@ -266,7 +267,7 @@ input::-ms-input-placeholder {
   font-weight: 400;
 }
 .sidebar .sidebar-nav .nav-item .nav-link:hover {
-  color: #2962FF !important;
+  color: #4169E1 !important;
 }
 
 body.sidebar-open .navbar-brand img {
@@ -286,7 +287,7 @@ body.sidebar-open .navbar-brand img {
   transition: border-color, box-shadow 0.3s ease-in-out;
   display: flex;
   align-items: center;
-  border: 1px solid #2962FF;
+  border: 1px solid #4169E1;
   padding: 0.1875rem;
 }
 .dark-mode-switch .toggle-switch .slider {
@@ -294,12 +295,12 @@ body.sidebar-open .navbar-brand img {
   margin: 0.125rem;
   width: 1.125rem;
   height: 1.125rem;
-  background-color: #2962FF;
+  background-color: #4169E1;
   border-radius: 50%;
   transition: transform 0.3s ease-in-out;
 }
 .dark-mode-switch input[type=checkbox]:checked + .toggle-switch {
-  background-color: #2962FF;
+  background-color: #4169E1;
 }
 .dark-mode-switch input[type=checkbox]:checked + .toggle-switch .slider {
   transform: translateX(1.375rem);
@@ -313,8 +314,8 @@ body.sidebar-open .navbar-brand img {
 .main {
   display: flex;
   margin-bottom: 100px;
-  margin-top: 100px;
   color: #111;
+  min-height: 80vh;
 }
 .main .main-container {
   display: flex;
@@ -333,8 +334,12 @@ body.sidebar-open .navbar-brand img {
 }
 .main .main-container h2 {
   text-transform: uppercase;
-  color: #2962FF;
+  color: #4169E1;
   margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+.main .main-container .card-code-p {
+  font-size: 1.5rem;
 }
 .main .main-img {
   width: 300px;
@@ -343,15 +348,6 @@ body.sidebar-open .navbar-brand img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-}
-.main .contact-icons {
-  display: flex;
-  margin-top: 20px;
-  gap: 30px;
-}
-.main .contact-icons a i {
-  color: #2962FF !important;
-  font-size: 1.5rem;
 }
 
 .section-table-points {
@@ -368,12 +364,13 @@ body.sidebar-open .navbar-brand img {
   border-radius: 15px;
 }
 .section-table-points .table-points .points h1 {
-  font-size: 2.2rem;
-  color: #2962FF;
+  font-size: 2.5rem;
+  color: #4169E1;
 }
 .section-table-points .table-points .points p {
   color: #111;
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .about-me {
@@ -383,6 +380,7 @@ body.sidebar-open .navbar-brand img {
   margin-top: 100px;
 }
 .about-me .about-me-containers {
+  margin: 100px 0px;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -395,17 +393,20 @@ body.sidebar-open .navbar-brand img {
   }
 }
 .about-me .about-me-containers .about-me-containers-img {
-  width: 60vw;
+  width: 20vw;
+  padding: 230px;
   margin-left: 100px;
   background-image: url("https://www.pngarts.com/files/8/Anime-PNG-Download-Image.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 250px;
+  background-position-y: 110px;
+  border-radius: 100%;
 }
 .about-me .about-me-containers .about-me-containers-text {
   font-size: 1.2rem;
-  width: 100vw;
-  padding-left: 30px;
+  margin-left: 100px;
+  width: 50vw;
   padding-right: 100px;
   color: #111 !important;
 }
@@ -415,7 +416,7 @@ body.sidebar-open .navbar-brand img {
 
 .project-search-container .projects-items {
   display: flex;
-  background-color: #fff;
+  background-color: transparent;
   padding: 5px;
   border-radius: 100px;
   gap: 30px;
@@ -442,11 +443,11 @@ body.sidebar-open .navbar-brand img {
 }
 .project-search-container .projects-items button:hover {
   color: #fff;
-  background-color: #2962FF;
+  background-color: #4169E1;
 }
 .project-search-container .projects-items .active {
   color: #fff;
-  background-color: #2962FF;
+  background-color: #4169E1;
 }
 .project-search-container .tools {
   margin: 100px;
@@ -463,7 +464,7 @@ body.sidebar-open .navbar-brand img {
   display: flex;
   width: 50%;
   gap: 20px;
-  border-bottom: 1px solid #2962FF;
+  border-bottom: 1px solid #4169E1;
 }
 
 .tools-text {
@@ -475,12 +476,23 @@ body.sidebar-open .navbar-brand img {
   margin: auto !important;
 }
 
+.contact-icons {
+  display: flex;
+  margin-top: 20px;
+  gap: 30px;
+}
+.contact-icons a i {
+  color: #4169E1 !important;
+  font-size: 1.5rem;
+}
+
 .card {
   transition: 0.3s ease-in;
+  max-width: 25vw;
 }
 .card span {
-  color: #2962FF;
-  border: 2px solid #2962FF;
+  color: #4169E1;
+  border: 2px solid #4169E1;
   border-bottom: 0px;
   border-radius: 10px;
   border-end-end-radius: 0px;
@@ -494,15 +506,53 @@ body.sidebar-open .navbar-brand img {
 .card svg {
   margin-right: 8px;
   width: 40px;
-  color: #2962FF;
+  color: #4169E1;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card p {
+  margin-top: 20px;
 }
 
 .card:hover {
-  scale: 1.04;
+  scale: 1.02;
+}
+
+.card:hover span {
+  background-color: #4169E1;
+  color: white;
+}
+
+.card:hover .options {
+  background-color: #4169E1 !important;
+  color: white !important;
+}
+
+.options {
+  border-left: 4px solid #4169E1;
+  border-radius: 3px;
+  transition: opacity 0.2s ease-in-out;
+  background-color: transparent;
+  color: #005fa3;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #fff !important;
+}
+
+.card:hover .card-options {
+  opacity: 1 !important;
+  background-color: #4169E1;
 }
 
 .card:hover .languagens {
   opacity: 1 !important;
+}
+
+.options {
+  background-color: #4169E1;
+  color: #4169E1 !important;
+  font-weight: 800;
 }
 
 .languagens button {
@@ -547,7 +597,7 @@ body.sidebar-open .navbar-brand img {
 .services h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #462E09;
+  color: #4169E1;
   font-size: 2.5rem;
   font-weight: 600;
 }
@@ -561,7 +611,7 @@ body.sidebar-open .navbar-brand img {
   padding: 0 3rem;
 }
 .services .services-container h5 {
-  color: #2962FF;
+  color: #4169E1;
 }
 @media (max-width: 56.25rem) {
   .services .services-container {
@@ -578,6 +628,7 @@ body.sidebar-open .navbar-brand img {
   background-color: #212529;
   color: #fff;
 }
+.dark-mode button,
 .dark-mode a,
 .dark-mode label,
 .dark-mode h1,
@@ -591,7 +642,7 @@ body.sidebar-open .navbar-brand img {
   background-color: #212529;
 }
 .dark-mode .modal {
-  background-color: #2962FF;
+  background-color: #4169E1;
   border-color: #DEE2E6;
   color: #fff;
 }
@@ -605,14 +656,14 @@ body.sidebar-open .navbar-brand img {
   color: #fff;
 }
 .dark-mode .navbar .navbar-nav .nav-link:hover {
-  color: #2962FF;
+  color: #4169E1;
 }
 .dark-mode .navbar .card-code {
   background-color: #222;
 }
 
 .footer-content {
-  background-color: #2962FF;
+  background-color: #4169E1;
   color: #fff;
   text-align: center;
   padding: 1.5rem;
